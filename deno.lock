@@ -17,6 +17,7 @@
     "jsr:@std/html@^1.0.3": "1.0.3",
     "jsr:@std/http@1.0.13": "1.0.13",
     "jsr:@std/io@~0.225.2": "0.225.2",
+    "jsr:@std/json@1": "1.0.1",
     "jsr:@std/jsonc@1.0.1": "1.0.1",
     "jsr:@std/log@0.224.14": "0.224.14",
     "jsr:@std/media-types@^1.1.0": "1.1.0",
@@ -31,6 +32,7 @@
     "npm:@js-temporal/polyfill@0.4.4": "0.4.4",
     "npm:@mdit/plugin-alert@0.14.0": "0.14.0_markdown-it@14.1.0",
     "npm:@mdx-js/mdx@3.1.0": "3.1.0",
+    "npm:@types/estree@1.0.6": "1.0.6",
     "npm:autoprefixer@10.4.20": "10.4.20_postcss@8.5.3",
     "npm:date-fns@4.1.0": "4.1.0",
     "npm:estree-walker@3.0.3": "3.0.3",
@@ -103,8 +105,14 @@
     "@std/io@0.225.2": {
       "integrity": "3c740cd4ee4c082e6cfc86458f47e2ab7cb353dc6234d5e9b1f91a2de5f4d6c7"
     },
+    "@std/json@1.0.1": {
+      "integrity": "1f0f70737e8827f9acca086282e903677bc1bb0c8ffcd1f21bca60039563049f"
+    },
     "@std/jsonc@1.0.1": {
-      "integrity": "6b36956e2a7cbb08ca5ad7fbec72e661e6217c202f348496ea88747636710dda"
+      "integrity": "6b36956e2a7cbb08ca5ad7fbec72e661e6217c202f348496ea88747636710dda",
+      "dependencies": [
+        "jsr:@std/json"
+      ]
     },
     "@std/log@0.224.14": {
       "integrity": "257f7adceee3b53bb2bc86c7242e7d1bc59729e57d4981c4a7e5b876c808f05e",
@@ -1751,6 +1759,7 @@
     "https://deno.land/x/lume@v2.5.2/core/fs.ts": "0409ca756906a066300e8bdbad590a122aeffa4fa4192cd20b854c6f555bf00d",
     "https://deno.land/x/lume@v2.5.2/core/loaders/binary.ts": "bb1e1cf3faac49f6007dc6814168dc0f633da17356db18e68862e4b2a87a3f33",
     "https://deno.land/x/lume@v2.5.2/core/loaders/json.ts": "632e840340edf7d79091fb37474a1cbf86dd2d218090fb6f6c0420f5f5e9c2ce",
+    "https://deno.land/x/lume@v2.5.2/core/loaders/mod.ts": "f33af1a2fa0913cf393cd9ef6bf5aea2d03d1058e8966ad7f1483efbcc7df118",
     "https://deno.land/x/lume@v2.5.2/core/loaders/module.ts": "abcb210fa6724b83407407cd0f7ef90462b35a2017bc135a3d124dd7f38843f6",
     "https://deno.land/x/lume@v2.5.2/core/loaders/text.ts": "42860fc3482651fa6cfba18a734bb548d6e6e1163bf1015c2abc447ab150acbd",
     "https://deno.land/x/lume@v2.5.2/core/loaders/toml.ts": "72ddfef2deea62815c28e27faa2c5356e09b3109e9547e47a6defea3d3332452",

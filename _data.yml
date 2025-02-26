@@ -1,0 +1,16 @@
+lang: en
+home:
+  welcome: "\U0001F525 <a href=\"https://translate.google.com/?sl=gl&tl=en&text=Lume%20e%20Xeo&op=translate\">Nuno Cruz</a> \U0001F9CA"
+  intro: "Welcome to [**Nuno Blog**](https://github.com/nmocruz/denoblog)"
+
+copyright: "[Nuno](https://github.com/famebot/xeo) &copy; 2022-2025 [Óscar&nbsp;Otero](https://oscarotero.com/) &amp; [Ricky&nbsp;de&nbsp;Laveaga](https://rdela.com/)"
+
+menu_links: []
+metas:
+  site: Nuno's Blog
+  description: Just another Blog
+  title: =title
+  image: =image
+  # twitter: '@famebot'
+  lang: en
+  generator: false

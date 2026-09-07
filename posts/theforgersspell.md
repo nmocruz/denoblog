@@ -11,7 +11,7 @@ draft: false
 
 There is a version of the Peter Principle that is less about ego or status than about judgment: a room can evaluate only what it has the depth to evaluate.
 
-Once a decision demands more technical depth than the room possesses, errors begin to run in both directions. Weak ideas pass because they look convincing. Strong ideas fail because they look unfamiliar.
+Once a decision demands more technical depth than the room possesses, errors begin to run in both directions. Weak ideas pass because they look convincing. Strong ideas fail because they look unfamiliar. And when nobody is clearly accountable for the result, neither kind of error has to be corrected.
 
 The room becomes unable to tell a masterpiece from a fake.
 
@@ -59,9 +59,13 @@ The art analogy has a limit. Van Meegeren knew he was committing fraud. In softw
 
 The ability to produce good work and the ability to recognize it are closely related. When a person lacks the depth to design a sound system, they may also lack the means to see why their design is weak. The blind spot has no built-in alarm.
 
-This helps explain how activity can replace progress. Meetings, alignment workshops, governance forums, and strategy decks are useful when they coordinate real work. They become dangerous when they shelter ideas from contact with reality. In a presentation, an architecture can be infinitely scalable, elegantly decoupled, and almost free. A compiler, a load test, or a production environment is less accommodating.
+This helps explain how activity can replace progress. Meetings, alignment workshops, governance forums, and strategy decks are useful when they coordinate real work. But an organization can begin to treat the act of discussing a problem as its response to the problem. A meeting is held, concerns are acknowledged, actions are vaguely agreed, and leadership can report that the issue is being addressed—even when nothing in the system changes.
 
-Past failures can then be explained away: the team lacked maturity, execution fell short, or priorities changed. Sometimes those explanations are true. But when every failure is attributed to execution and never to the design itself, the organization loses the feedback that might improve its judgment.
+The meeting provides the appearance of movement without the risk of a measurable result. It also shelters ideas from contact with reality. In a presentation, an architecture can be infinitely scalable, elegantly decoupled, and almost free. A compiler, a load test, or a production environment is less accommodating.
+
+Bad decisions can survive in this environment because the same room that made them is also allowed to decide whether they worked. Without technical verification, another meeting can reinterpret failure as partial progress, a need for further alignment, or the beginning of a new strategic phase.
+
+Past failures are then explained away: the team lacked maturity, execution fell short, or priorities changed. Sometimes those explanations are true. But when every failure is attributed to execution and never to the design or the decision-makers, the organization loses the feedback that might improve its judgment.
 
 The result need not involve dishonesty. Someone who believes completely in a weak idea may present it more convincingly than someone who understands a difficult idea well enough to acknowledge its trade-offs. To a room unable to inspect the system, certainty can look like competence.
 
@@ -87,6 +91,18 @@ The person appointed to enable the engineers has now become their main blocker. 
 
 Over time, capable engineers learn that producing evidence creates more friction than producing slides. Some disengage. Others leave. The organization retains the appearance of governance while losing the people most able to improve the governed system.
 
+### The Leadership Chain That Owns No Result
+
+The absence of accountability is rarely confined to one person. It can extend through an entire chain of leadership. Each level asks for updates, attends steering meetings, requests another plan, and passes decisions upward or downward. Everyone participates, but nobody owns the outcome.
+
+This creates a system in which activity is visible and responsibility is diffuse. Leaders can point to the meetings they attended, the questions they asked, and the documents they requested. If the work produces no change, responsibility falls between roles: one group set the strategy, another approved the architecture, another managed delivery, and the engineers supposedly failed to execute. The chain is full of decision-makers, yet somehow has no one accountable for the decision.
+
+More meetings are then prescribed as the cure. A failed initiative produces a review, the review creates a working group, and the working group schedules a recurring forum. The organization responds to the absence of results by generating more of the activity that failed to produce them.
+
+Without a named owner, a measurable outcome, and a date on which the result will be examined, this cycle can continue indefinitely. No working software needs to appear. No architecture has to survive a real workload. No leader has to say, plainly, “I made this decision, it did not work, and I am responsible for changing it.”
+
+Accountability is the mechanism that breaks the spell. It connects authority to consequence. The person empowered to approve or block a decision must also remain answerable for what that decision produces—not only for whether the correct process was followed.
+
 ### A Room That Is Both Too Permissive and Too Strict
 
 This is why pointing out the inconsistency rarely changes anything: the same group approved a hollow proposal and blocked a sound one within the same quarter.
@@ -105,9 +121,10 @@ In practice, that evidence is often unglamorous:
 - a prototype connected to the real system;
 - a threat model tied to concrete attack paths;
 - an architecture decision record with acceptance criteria written before proposals are judged;
-- an incremental release whose outcomes can be observed and reversed.
+- an incremental release whose outcomes can be observed and reversed;
+- a named decision owner, a measurable result, and a review date.
 
-These tools do not remove judgment. They discipline it. They make disagreement specific, expose trade-offs, and give reality a vote.
+These tools do not remove judgment. They discipline it. They make disagreement specific, expose trade-offs, give reality a vote, and prevent accountability from dissolving into the room.
 
 None of this requires declaring anyone incompetent. It requires recognizing that seniority, confidence, and correctness are different things. When a decision exceeds the room’s depth, the answer is not greater certainty. It is stronger evidence.
 
